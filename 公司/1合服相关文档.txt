@@ -1,0 +1,145 @@
+合服前
+1. 服务器设置当成普通类型 ，对内测试。停服。
+寄售和求购必须在服务器为开放状态的时候才会按照时间运行，所以服务器不能是维护状态，可以设置为普通状态
+
+2. admin/warlords/divide.jsp国库资金回收
+3. 查看国库版本，用于合服重启后更新国库版本  城主战/选举
+4. admin/faction/updateMasterLoginTime.jsp  //必须在合服前执行，可以把所有的帮主查询出来更新最近登录时间，这样帮主就不会被删除了
+5. 清空快购admin/hefu/clearaskbuy.jsp
+6. 清空寄售admin/hefu/clearconsignment.jsp
+7. 返还山寨  admin/shanzhai/shanzhai_treasure_return.jsp
+8. admin/hefu/huashanhefu.jsp
+执行三个页面，过半小时以后就可以停服了，数据库操作
+数据库操作之前
+-------------------------------------------------------------------------------
+合服后
+long now = System.currentTimeMillis();
+				
+				DefaultPlayerManager.合服刷新开关 = true;
+				String[] hefu = new String[1];
+				hefu[0] = GameServerContext.getContext().getGlobalServerName();
+				DefaultPlayerManager.hefuNames = hefu;
+				PlayerManager.logger.error("[设置为合服server]");
+
+				
+				//HeFuManager.合服战队处理();
+				//HeFuManager.合服角色处理();
+				
+				out.print("处理完成 ,cost:"+(System.currentTimeMillis() - now)+"ms");
+1. admin/hefu/hefu.jsp//设置合服战队，合服角色处理1qafdsazxfdsafdasw2jfkdFDSKJFLSDajfkldjal
+2. admin/hefu/hefudeleteDBClass.jsp
+	//删除不需要保留的数据库类，处理完成后重启服务器
+
+3. 需要去网关把玩家数据更新，执行sql语句admin/hefu/updateServerName.jsp，
+	是直接执行sql语句的，需要把serverRealName改一下，
+	改完后重启网关
+
+4. admin/faction/chargeName.jsp   修改帮会重名并发放改名道具
+5. admin/sworn/chargeName.jsp   修改结义重名并发放改名道具
+6. admin/title/delTitleAll.jsp   删除天下第一等需要排名争夺和掌门谷主分配职务的称号
+8. admin/title/deleteBillboardTitleEntity.jsp修复有问题的称号
+7. 清除game_runtime_data里的部分文件,重启
+9. 修改国战version  /admin/warlords/chargeVersion.jsp
+
+10. 最后执行网关的删除已删角色的页面，需要把playerdata.txt文件替换为最新的admin/hefu/deleteplayerInfo.jsp
+/data1/home/3dgame/resin_sword_gateway/webapps/game_gateway_center/WEB-INF/playerdata.txt
+
+---------------------------------------------------------------------------------
+	1104 合服 ios  仗剑江湖/无与伦比/气宇轩昂/江湖豪客 version 21
+	12.03 UC合服  大义凛然/国色天香/乱世英雄   version 17
+	12.23 UC合服  名扬四海—铁血丹心—妙笔仙音  version 44
+	01.06 混服合服  一世英雄 一代枭雄 义薄云天  version 24
+	12.27 混服合服  逐鹿中原/笑傲武林/武林独行  version 73
+	02.24 混服合服 倾国倾城/独孤求败/龙争虎斗 version 22
+	
+	03.03 卧薪尝胆/文武双全/群雄逐鹿（合服完成后服务器名称：卧薪尝胆）version 13
+	03.16 华山论剑/猛龙过江/兵临城下/诏令天下  (合服完成后服务器名称:华山论剑)version 23
+	03.23 乱世春秋/十面埋伏/宏图盛世（合服完成后服务器名称：乱世春秋） version 26
+	************************************************************
+	最新服刀光剑影134 大漠孤烟135 无与伦比136 大义凛然137 一世英雄138 气宇轩昂139 一代枭雄140 紫气东来141 江湖豪客143 乱世英雄144 义薄云天145 倾国倾城146 国色天香147 乱世春秋148 独孤求败149 华山论剑150
+	十面埋伏151 猛龙过江152 龙争虎斗153
+	宏图盛世(IOS)154    兵临城下(UC)155   剑指苍穹(混服)156   决战巅峰(混服) 157   诏令天下(UC)158
+	卧薪尝胆(混服) 159  破釜沉舟(UC) 160  文武双全(混服)161  见义勇为(UC)162  群雄逐鹿(混服)163   四面楚歌(UC)164  金蝉脱壳(IOS)165
+	斗转星移(混服)166   九五之尊(UC)167    2月4:降龙伏虎(混服)168  绿林豪杰(UC)169 
+	2月19:青冥宝剑(混服)170  惊天动地(UC)171
+	3月3:月影龙阁(混服)172  石破天惊(UC)173  落叶归根(IOS)174
+	3.17棋逢对手(混服)175  花好月圆(UC)176
+
+
+
+	
+----------------------------------------------------------------
+	台湾合服  纵横天下 名扬四海  国库version 55
+			  俠骨柔情 亂世英雄  国库version  40
+			  3.9  快意恩仇 v27  浩氣長存 v12
+	台服最新服 俠骨柔情110 快意恩仇111  浩气长存 112
+
+-------------------------------------------------------------------------------------
+	韩服
+	jdbc:mysql://10.104.150.78:58306/wahu_gamedb04?characterEncoding=utf-8&useOldAliasMetadataBehavior=true
+
+	jdbc:mysql://10.100.23.32:58306/wahu_gamedb02?characterEncoding=utf-8&useOldAliasMetadataBehavior=true
+	韩国1209合服 丐帮  唐门  version 3
+
+	1月20  武当  神龙 version 10
+	
+--------------------------------------------------------------------------------------
+	越南
+	game1 102  game2 103  game3 104  game4 105
+	
+--------------------------------------------------------------------------------------
+
+delete from playerdata where playerlevel<=45 and  ceil(sysdate - To_date(LASTLOGINDATE2 , 'yyyy-mm-dd hh24-mi-ss'))>31  and rmb<=0 and MARRYENTITYID<=0;
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1.连接数据库：
+sqlplus / as sysdba
+2.表空间查询脚本
+set linesize 666
+select c.TABLESPACE_NAME,
+       c.EXTENT_MANAGEMENT,
+       c.SEGMENT_SPACE_MANAGEMENT,
+       d.sum_MB,
+       d.free_MB,
+       d.use_precent
+  from dba_tablespaces c,
+       (select b.tablespace_name,
+               round(sum(b.bytes) / 1024 / 1024, 0) sum_MB,
+               round(sum(nvl(a.bytes, 0)) / 1024 / 1024, 0) free_MB,
+               round((sum(b.bytes) - sum(nvl(a.bytes, 0))) / sum(b.bytes), 4) * 100 use_precent
+          from (select tablespace_name, file_id, sum(bytes) bytes
+                  from dba_free_space
+                 group by tablespace_name, file_id) a,
+               dba_data_files b
+         where a.file_id(+) = b.file_id
+           and a.tablespace_name(+) = b.tablespace_name
+         group by b.tablespace_name
+         order by use_precent) d
+ where c.TABLESPACE_NAME = d.TABLESPACE_NAME
+ order by d.use_precent;
+3.查询表空间数据文件所在位置
+col file_name for a50
+select TABLESPACE_NAME,FILE_NAME from dba_data_files;
+4. 创建表空间脚本：(红色字体根据实际情况变动)
+[oracle@oradb-10 ~]$ vi addtbs.sql 
+create tablespace DATA01 datafile '/data1/oradata/ora11g/data01_01.dbf' size 20G;
+alter tablespace DATA01 add datafile '/data1/oradata/ora11g/data01_02.dbf' size 30G;
+alter tablespace DATA01 add datafile '/data1/oradata/ora11g/data01_03.dbf' size 30G;
+alter tablespace DATA01 add datafile '/data1/oradata/ora11g/data01_04.dbf' size 20G;
+create user game16117  default tablespace data01 identified by game16117oracle;
+ grant connect,resource,unlimited tablespace to game16117;
+exit;
+5.执行创建表空间脚本：
+sqlplus / as sysdba @addtbs.sql &
+6.再次执行表空间查询脚本，核对表空间是否已建好。
+
+********************************************
+清库 drop user GAME2102 cascade;
+create user game2102  default tablespace DATA01 identified by game2102oracle;
+grant connect,resource,unlimited tablespace to game2102; 
+
+
+select username from dba_users where username like 'GAME%';
+
+SELECT USERNAME,COUNT(*) FROM V$SESSION GROUP BY USERNAME;
+-------------------------------------------------------------------------------------------------------------------------------

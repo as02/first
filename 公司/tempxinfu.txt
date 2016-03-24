@@ -1,0 +1,75 @@
+117.121.24.231 斗转星移（混服）  jdbc:oracle:thin:@192.168.1.41:1521:ora11g  jdbc:oracle:thin:@192.168.1.41:1521:ora11g
+117.121.29.222  九五之尊（UC）    jdbc:oracle:thin:@192.168.1.31:1521:ora11g  jdbc:oracle:thin:@192.168.1.31:1521:ora11g
+
+jdbc:oracle:thin:@192.168.1.41:1521:ora11g douzhuanxingyi166  douzhuanxingyi166oracle
+jdbc:oracle:thin:@192.168.1.31:1521:ora11g  jiuwuzhizun167   jiuwuzhizun167oracle
+
+
+118.107.73.144  game9110  game9110oracle
+
+
+10.7.10.252   118.107.73.195 game10111  game10111oracle
+
+
+逐鹿中原  jdbc:oracle:thin:@192.168.1.30:1521:ora11g  zhuluzhongyuan105  zhuluzhongyuan105oracle
+笑傲武林  jdbc:oracle:thin:@192.168.1.30:1521:ora11g  xiaoaowulin106   xiaoaowulin106oracle
+武林独行  jdbc:oracle:thin:@192.168.1.20:1521:ora11g  wulinduxing117   wulinduxing117oracle
+逐鹿中原是主服
+
+
+
+S11 - Ác Nhân Cốc: 04/02/2016
+
+S12 - Linh Thứu Cung: 17/02/2016
+11区  Ác Nhân Cốc
+12区 Linh Thứu Cung
+请以下面为准
+
+
+绿林豪杰(UC)169   jdbc:oracle:thin:@192.168.1.30:1521:ora11g    lvlinhaojie169   lvlinhaojie169oracle
+降龙伏虎(混服)168 jdbc:oracle:thin:@192.168.1.20:1521:ora11g    xianglongfuhu168   xianglongfuhu168oracle
+
+
+117.121.29.214  25570青冥宝剑混服  
+jdbc:oracle:thin:@192.168.1.31:1521:ora11g   qingmingbaojian170 qingmingbaojian170oracle
+
+117.121.17.22 25570惊天动地UC
+jdbc:oracle:thin:@192.168.1.20:1521:ora11g  jingtiandongdi171 jingtiandongdi171oracle
+
+倾国倾城  jdbc:oracle:thin:@192.168.1.20:1521:ora11g  qingguoqingcheng146  qingguoqingcheng146oracle
+独孤求败  jdbc:oracle:thin:@192.168.1.31:1521:ora11g  duguqiubai149   duguqiubai149oracle
+龙争虎斗  jdbc:oracle:thin:@192.168.1.31:1521:ora11g  longzhenghudou153   longzhenghudou153oracle
+-----------------------------------------------------------------------------------------------
+卧薪尝胆  jdbc:oracle:thin:@192.168.1.20:1521:ora11g  woxinchangdan159   woxinchangdan159oracle 
+文武双全  jdbc:oracle:thin:@192.168.1.31:1521:ora11g  wenwushuangquan161  wenwushuangquan161oracle
+群雄逐鹿  jdbc:oracle:thin:@192.168.1.246:1521:ora11g   qunxiongzhulu163   qunxiongzhulu163oracle
+
+----------------------------------------------------------------------
+华山论剑/猛龙过江/兵临城下/诏令天下（合服完成后服务器名称：华山论剑）
+华山论剑  jdbc:oracle:thin:@192.168.1.246:1521:ora11g  huashanlunjian150  huashanlunjian150oracle  135
+猛龙过江  jdbc:oracle:thin:@192.168.1.30:1521:ora11g   menglongguojiang152  menglongguojiang152oracle  152
+兵临城下  jdbc:oracle:thin:@192.168.1.41:1521:ora11g   binglinchengxia155   binglinchengxia155oracle  155
+诏令天下  jdbc:oracle:thin:@192.168.1.246:1521:ora11g   zhaolingtianxia158  zhaolingtianxia158oracle   158
+----------------------------------------------------------------------------
+13服 ：Hoa Sơn  jdbc:oracle:thin:@10.7.10.14:1521:ora11g   game13114  game13114oracle
+14服 ：Tung Sơn
+
+-----------------------------------------------------------------
+落叶归根  jdbc:oracle:thin:@192.168.1.31:1521:ora11g  luoyeguigen174  luoyeguigen174oracle
+石破天惊  jdbc:oracle:thin:@192.168.1.30:1521:ora11g  shipotianjing173  shipotianjing173oracle
+月影龙阁  jdbc:oracle:thin:@192.168.1.245:1521:ora11g yueyinglongge172 yueyinglongge172oracle
+
+---------------------------------------------------------------------------
+15服  jdbc:oracle:thin:@10.7.10.25:1521:ora11g  game15116  game15116oracle
+16服 jdbc:oracle:thin:@10.7.10.19:1521:ora11g  game16117  game16117oracle
+---------------------------------------------------------------------------
+3.17新服 
+棋逢对手   175  117.121.17.12   192.168.1.21   jdbc:oracle:thin:@192.168.1.21:1521:ora11g    qifengduishou175   qifengduishou175oracle
+花好月圆  176   117.121.17.26   192.168.1.245  jdbc:oracle:thin:@192.168.1.245:1521:ora11g   huahaoyueyuan176   huahaoyueyuan176oracle
+---------------------------------------------------------------------------------
+
+03.23 乱世春秋/十面埋伏/宏图盛世（合服完成后服务器名称：乱世春秋）
+乱世春秋  jdbc:oracle:thin:@192.168.1.30:1521:ora11g    luanshichunqiu148    luanshichunqiu148oracle  148
+十面埋伏  jdbc:oracle:thin:@192.168.1.245:1521:ora11g    shimianmaifu151    shimianmaifu151oracle  141 
+宏图盛世  jdbc:oracle:thin:@192.168.1.41:1521:ora11g   hongtushengshi154   hongtushengshi154oracle  154
+------------------------------------------------------------------------------

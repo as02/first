@@ -1,0 +1,57 @@
+
+
+局域网 \\192.168.120.248
+
+http://whcliosdl.sqage.com/download/download.jsp?ci=20160322183519890234&cv=wohucanglong_sqage_half_9211&cc=sqage01&cp=ios
+
+{
+旧	登陆账号:3dman
+	私钥密码:3d#man@45
+
+	游戏进程账号： 3dgame
+	密码： 3d#98game@
+	说明用3dman账号登陆  然后执行  su - 3dgame  输入密码  切换至3dgame
+
+	日志查看账号：3dloger
+	私钥密码： 3d121view#
+}
+
+{
+	登陆账号:3dman
+	私钥密码:wohu@#1210
+	 
+	游戏进程账号： 3dgame
+	密码： game#1_10
+	说明用3dman账号登陆  然后执行  su - 3dgame  输入密码  切换至3dgame
+	日志查看账号：3dloger
+	私钥密码： log@11#vi
+}
+em密码:
+117.121.17.20     eBnXPQI8Gf
+117.121.17.21     W4STtZozc6
+117.121.17.9      4pTda7b9WE
+117.121.17.30     vbsMze1EVc
+117.121.17.31     X6LEh4RsHq
+103.10.158.86     C8S9CTAgpr
+117.121.17.42     XzO2KuJDgo
+117.121.17.41     ntglRTWUG2
+----------------------------------------------------------------------------------------------------------
+
+韩国 wahu_admin   -Yq=dQ8u  sudo -i
+韩国vpn  Netmarble2!
+
+mysql -h 10.104.150.74 -u wahu_mng -p  
+6uU*S&RU!@
+
+mysql -h 172.16.16.45 -P 3306 -u root -p123
+----------------------------------------------------------------------------------------------------------
+
+越南svn	svn://118.107.73.175:23690/			sqagewohu/sqwh@668
+
+越南 ssh root/  qXa3TpM@F6hzb4LnBmCk    VTCm0b1le@!@#  
+	ssh port: 6886
+	
+https://118.107.73.231:1158/em 
+越南 118.107.73.203 oracle em sys/xdOnMyrO1T
+越南 118.107.73.231 oracle    sys/xdOnMyrO1T
+----------------------------------------------------------------------------------------------------------

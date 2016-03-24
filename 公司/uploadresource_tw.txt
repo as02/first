@@ -1,0 +1,15 @@
+﻿@echo off
+
+
+echo ""
+echo ""
+echo "正在同步Android tw资源..."
+rsync -aP --include="*.7z" --exclude="*.*" final_android_res_tw sqage@210.242.234.76::3dresource/download/ --password-file=rsync.secrets
+rsync -aP final_android_res_tw/androidDRM.xml sqage@210.242.234.75::3d_sword_gateway/WEB-INF/conf/  --password-file=rsync.secrets
+
+echo ""
+echo ""
+echo "正在同步ISO tw资源..."
+
+rsync -aP --include="*.7z" --exclude="*.*"  final_ios_res_tw sqage@210.242.234.76::3dresource/download/  --password-file=rsync.secrets
+rsync -aP final_ios_res_tw/iosDRM.xml   sqage@210.242.234.75::3d_sword_gateway/WEB-INF/conf/  --password-file=rsync.secrets
