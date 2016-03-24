@@ -1,0 +1,11 @@
+
+git config --global user.email "xiaolongnvo@163.com"
+git config --global user.name "as02"
+
+git clone https://github.com/as02/first.git
+
+git add .
+
+git  commit -m "changes log"
+
+git push -u origin master
